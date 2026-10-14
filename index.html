@@ -1,1 +1,105 @@
-<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MARKAZU</title><style>*{margin:0;padding:0;box-sizing:border-box}body{background:#06130d;color:#fff;font-family:sans-serif}.hero{background:linear-gradient(180deg,#0d3d26,#071a11);text-align:center;padding:28px 14px 20px}.logo{width:190px;height:190px;margin:0 auto 16px;border-radius:50%;border:4px solid #f9e27a;box-shadow:0 0 40px rgba(212,175,55,.8);overflow:hidden;background:#000}.logo img{width:100%;height:100%;object-fit:cover}.title{font-size:26px;color:#fbe9a0;font-weight:800}.motto{display:flex;align-items:center;gap:8px;justify-content:center;margin:16px auto;max-width:400px}.motto .line{flex:1;height:1px;background:#d4af37}.motto b{color:#f9e27a;font-size:11px;letter-spacing:3px}.card{background:#fffdf5;color:#111;border-radius:16px;padding:16px;margin:12px 10px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.item{background:#fff;border:1.5px solid #e6d5a0;border-radius:10px;padding:10px;text-align:center;font-size:12px}.item b{display:block;color:#0d3d26}.btn{width:100%;background:#0d3d26;color:#fff;padding:13px;border:none;border-radius:10px;font-weight:800;margin-top:10px}input,select{width:100%;padding:10px;border-radius:8px;border:1.5px solid #d9c9a0;margin-top:4px}</style></head><body><div class="hero"><div class="logo"><img src="data:image/jpeg;base64,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"></div><div class="title">MARKAZU-AS-SUNNATI<br>LITAHFIZI-ALQUR'AN</div><div class="motto"><div class="line"></div><b>DISCIPLINE • RIGUEUR • PROGRÈS</b><div class="line"></div></div><div style="font-size:11px;color:#cbbd8a">Maradi Niger</div></div><div class="card"><h2>📚 NOS 8 PROGRAMMES</h2><div class="grid"><div class="item"><b>Lire/Ecrire</b></div><div class="item"><b>Coran Tajwid</b></div><div class="item"><b>Langue Arabe</b></div><div class="item"><b>Sirah</b></div><div class="item"><b>Fiqhu</b></div><div class="item"><b>Aqidah</b></div><div class="item"><b>Hadith</b></div><div class="item"><b>Akhlak</b></div></div></div><div class="card"><h2>📝 INSCRIPTION</h2><form onsubmit="go(event)"><input id="n" required placeholder="Nom enfant *"><div style="display:grid;grid-template-columns:1fr 1fr;gap:6px"><select id="s" required><option value="">Sexe</option><option>Garcon</option><option>Fille</option></select><input id="v" required placeholder="Ville"></div><input id="t" required placeholder="Tel parent"><select id="lv" required><option value="">Niveau</option><option>Debutant</option><option>Coran</option><option>Internat</option></select><button class="btn" type="submit">ENVOYER WHATSAPP</button></form></div><script>function go(e){e.preventDefault();var m="*INSCRIPTION*%0ANom: "+n.value+"%0ASexe: "+s.value+"%0AVille: "+v.value+"%0ATel: "+t.value+"%0ANiv: "+lv.value;window.open("https://wa.me/22791224615?text="+m,"_blank")}</script></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MARKAZU-AS-SUNNATI MARADI</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#06130d;color:#fff;font-family:sans-serif}
+.hero{background:radial-gradient(ellipse at top,rgba(255,230,120,.5),transparent 60%),linear-gradient(180deg,#0d3d26,#071a11);text-align:center;padding:32px 14px 24px}
+.logo{width:195px;height:195px;margin:0 auto 18px;border-radius:50%;border:4px solid #f9e27a;box-shadow:0 0 50px rgba(212,175,55,.85),0 0 0 12px rgba(212,175,55,.15);background:#000;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.title{font-size:27px;color:#fbe9a0;font-weight:800;line-height:1.1}
+.motto{display:flex;align-items:center;gap:10px;justify-content:center;margin:20px auto 6px;max-width:420px}
+.motto .line{flex:1;height:1px;background:linear-gradient(90deg,transparent,#d4af37,transparent)}
+.motto b{color:#f9e27a;font-size:12px;letter-spacing:3px}
+.badge{display:inline-block;margin-top:14px;background:linear-gradient(90deg,#b8931f,#f9e27a,#b8931f);color:#1a1200;padding:9px 26px;border-radius:30px;font-weight:800;font-size:11px}
+.wrap{max-width:480px;margin:auto;padding:0 10px 30px}
+.card{background:#fffdf5;color:#111;border-radius:18px;padding:18px 16px;margin:14px 0;box-shadow:0 12px 30px rgba(0,0,0,.4)}
+.card h2{text-align:center;color:#0d3d26}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.item{background:linear-gradient(145deg,#fff,#fdf6d8);border:1.5px solid #e6d5a0;border-radius:12px;padding:12px;text-align:center}
+.item b{display:block;font-size:12.5px;color:#0d3d26}
+.frais{background:linear-gradient(145deg,#0f2e1f,#143d2b);color:#f9e27a;border-radius:12px;padding:12px;font-size:11.5px;line-height:1.7;border:1px solid #2a5a3a;margin-top:14px}
+label{font-size:11px;font-weight:700;color:#0d3d26;margin-top:10px;display:block}
+input,select{width:100%;padding:11px;border-radius:10px;border:1.5px solid #d9c9a0;background:#fffef8;font-size:13px;margin-top:4px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.btn{width:100%;background:linear-gradient(90deg,#0d3d26,#1a8a45);color:#fff;padding:14px;border:none;border-radius:12px;font-weight:800;margin-top:14px}
+</style>
+</head>
+<body>
+<div class="hero">
+<!-- LOGO INTÉGRÉ DIRECTEMENT ICI - PLUS DE CERCLE NOIR -->
+<div class="logo">
+<svg viewBox="0 0 200 200" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="98" fill="#0a0a0a" stroke="#f9e27a" stroke-width="4"/>
+  <circle cx="100" cy="100" r="78" fill="none" stroke="#d4af37" stroke-width="1.5" opacity="0.6"/>
+  <!-- Livre Coran doré -->
+  <g transform="translate(100,100)">
+    <path d="M-35 -25 L-35 30 Q-5 40 0 30 L0 -25 Q-5 -20 -35 -25 Z" fill="#f9e27a" stroke="#b8931f" stroke-width="1"/>
+    <path d="M35 -25 L35 30 Q5 40 0 30 L0 -25 Q5 -20 35 -25 Z" fill="#fbe9a0" stroke="#b8931f" stroke-width="1"/>
+    <path d="M0 -25 L0 30" stroke="#b8931f" stroke-width="1.5"/>
+    <!-- Texte arabe stylisé -->
+    <text x="0" y="-2" text-anchor="middle" font-size="14" fill="#0d3d26" font-weight="800">القرآن</text>
+  </g>
+  <!-- Texte circulaire -->
+  <path id="circlePath" d="M 100,100 m -72,0 a 72,72 0 1,1 144,0 a 72,72 0 1,1 -144,0" fill="none"/>
+  <text font-size="8.5" fill="#f9e27a" letter-spacing="1.2" font-weight="700">
+    <textPath href="#circlePath" startOffset="0%">MARKAZU-AS-SUNNATI • LITAHFIZI-ALQUR'AN •</textPath>
+  </text>
+</svg>
+</div>
+<div class="title">MARKAZU-AS-SUNNATI<br>LITAHFIZI-ALQUR'AN</div>
+<div class="motto"><div class="line"></div><b>DISCIPLINE • RIGUEUR • PROGRÈS</b><div class="line"></div></div>
+<div style="font-size:11px;color:#cbbd8a;margin-top:5px">Centre de Mémorisation du Saint Coran - Maradi Niger</div>
+<div class="badge">MARADI NIGER</div>
+</div>
+
+<div class="wrap">
+<div class="card">
+<h2>📚 NOS 8 PROGRAMMES</h2>
+<div style="height:2px;background:linear-gradient(90deg,transparent,#d4af37,transparent);margin:10px 0"></div>
+<div class="grid">
+<div class="item">✍️<br><b>Lire et Écrire</b><br><small>Arabe & Français</small></div>
+<div class="item">📖<br><b>Coran Tajwid</b><br><small>Hifz + Ahkam</small></div>
+<div class="item">🗣️<br><b>Langue Arabe</b><br><small>Comprendre Coran</small></div>
+<div class="item">📜<br><b>Sirah</b><br><small>Vie Prophète ﷺ</small></div>
+<div class="item">⚖️<br><b>Fiqhu</b><br><small>Jurisprudence</small></div>
+<div class="item">☝️<br><b>Aqidah</b><br><small>Tawhid</small></div>
+<div class="item">📚<br><b>Hadith</b><br><small>40 Nawawi</small></div>
+<div class="item">🤲<br><b>Akhlak</b><br><small>Bons comportements</small></div>
+</div>
+<div class="frais">
+<b>• Externat:</b> Samedi & Dimanche 8h30-16h30<br>Inscription 2000 FCFA • Mensuels 6500 FCFA<br>
+<b>• Internat:</b> 7 à 14 ans • À discuter avec direction<br>📞 91 22 46 15 / 99 64 16 33
+</div>
+</div>
+
+<div class="card">
+<h2>📝 FICHE D'INSCRIPTION</h2>
+<div style="height:2px;background:linear-gradient(90deg,transparent,#d4af37,transparent);margin:10px 0"></div>
+<form onsubmit="sendW(event)">
+<label>Nom complet enfant *</label>
+<input id="nom" required placeholder="Ex: Abdoulaye Moussa">
+<div class="row">
+<div><label>Sexe *</label><select id="sexe" required><option value="">Choisir</option><option>Garçon</option><option>Fille</option></select></div>
+<div><label>Ville *</label><input id="ville" required placeholder="Maradi"></div>
+</div>
+<label>Téléphone parent *</label>
+<input id="tel" required placeholder="+227 91 22 46 15">
+<label>Niveau souhaité *</label>
+<select id="niv" required><option value="">Choisir</option><option>Débutant Lire/Ecrire</option><option>Coran + Tajwid</option><option>Langue Arabe</option><option>Internat complet</option></select>
+<button class="btn" type="submit">📲 ENVOYER VIA WHATSAPP</button>
+</form>
+</div>
+</div>
+
+<script>
+function sendW(e){
+e.preventDefault();
+var m="*NOUVELLE INSCRIPTION - MARKAZU AS-SUNNATI*%0A%0ANom: "+document.getElementById('nom').value+"%0ASexe: "+document.getElementById('sexe').value+"%0AVille: "+document.getElementById('ville').value+"%0ATel: "+document.getElementById('tel').value+"%0ANiveau: "+document.getElementById('niv').value;
+window.open("https://wa.me/22791224615?text="+m,"_blank");
+}
+</script>
+</body>
+</html>
