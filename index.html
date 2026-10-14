@@ -2,61 +2,77 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Markazu-As-Sunnati - Maradi Niger</title>
-<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MARKAZU-AS-SUNNATI - MARADI NIGER</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Inter,sans-serif;background:#06130d;color:#fff}
-.hero{background:radial-gradient(ellipse at center top, rgba(255,220,100,0.45) 0%, rgba(212,175,55,0.18) 35%, transparent 70%), linear-gradient(180deg, #0d3d26 0%, #071a11 100%);text-align:center;padding:24px 12px 20px}
-.logo-wrap{width:175px;height:175px;margin:0 auto 14px;border-radius:50%;border:4px solid #f9e27a;box-shadow:0 0 45px rgba(212,175,55,0.75),0 0 0 10px rgba(212,175,55,0.12);overflow:hidden;background:#000}
-.logo-wrap img{width:100%;height:100%;object-fit:cover}
-.title{font-family:Amiri,serif;font-size:25px;line-height:1.15;color:#fbe9a0;text-shadow:0 2px 15px rgba(0,0,0,0.9)}
-.motto{display:flex;align-items:center;justify-content:center;gap:10px;margin:18px auto 8px;max-width:430px}
-.motto-line{height:1px;flex:1;background:linear-gradient(90deg,transparent,#d4af37,transparent)}
-.motto-text{font-size:12px;letter-spacing:3px;font-weight:800;color:#f9e27a;white-space:nowrap}
-.gold-badge{background:linear-gradient(90deg,#b8931f,#f9e27a,#b8931f);color:#1a1200;padding:8px 24px;border-radius:30px;font-weight:800;font-size:12px;letter-spacing:1.5px;display:inline-block;box-shadow:0 4px 15px rgba(212,175,55,0.4);margin-top:14px}
-.container{max-width:480px;margin:auto;padding:0 12px 30px}
-.white-card{background:#fffdf5;color:#1a1a1a;border-radius:18px;padding:18px 16px;margin:14px 0;box-shadow:0 12px 30px rgba(0,0,0,0.4);border:1px solid #f0e0a0}
-.white-card h2{font-family:Amiri;text-align:center;color:#0d3d26;font-size:20px}
+body{font-family:sans-serif;background:#06130d;color:#fff}
+.hero{background:radial-gradient(ellipse at top,rgba(255,220,100,.5),transparent 60%),linear-gradient(180deg,#0d3d26,#071a11);text-align:center;padding:28px 14px 20px}
+.logo{width:185px;height:185px;margin:0 auto 16px;border-radius:50%;border:4px solid #f9e27a;box-shadow:0 0 50px rgba(212,175,55,.8),0 0 0 10px rgba(212,175,55,.15);overflow:hidden;background:#000}
+.logo img{width:100%;height:100%;object-fit:cover}
+.title{font-family:Amiri,serif;font-size:25px;color:#fbe9a0;line-height:1.15}
+.motto{display:flex;align-items:center;gap:10px;justify-content:center;max-width:420px;margin:18px auto 6px}
+.motto .line{flex:1;height:1px;background:linear-gradient(90deg,transparent,#d4af37,transparent)}
+.motto b{color:#f9e27a;font-size:11.5px;letter-spacing:3px}
+.badge{display:inline-block;margin-top:14px;background:linear-gradient(90deg,#b8931f,#f9e27a,#b8931f);color:#1a1200;padding:8px 24px;border-radius:30px;font-weight:800;font-size:11px;letter-spacing:1.5px}
+.container{max-width:480px;margin:auto;padding:0 10px 30px}
+.card{background:#fffdf5;color:#1a1a1a;border-radius:18px;padding:18px 16px;margin:14px 0;box-shadow:0 12px 30px rgba(0,0,0,.4);border:1px solid #f0e0a0}
+.card h2{font-family:Amiri;text-align:center;color:#0d3d26;font-size:20px}
 .hr{height:2px;background:linear-gradient(90deg,transparent,#d4af37,transparent);margin:10px 0}
-.program-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
-.prog{background:linear-gradient(145deg,#ffffff,#fdf6d8);border:1.5px solid #e6d5a0;border-radius:12px;padding:12px;text-align:center}
-.prog b{display:block;font-size:12.5px;color:#0d3d26}
-.prog small{font-size:10.5px;color:#666}
-.btn-submit{width:100%;background:linear-gradient(90deg,#0d3d26,#1a8a45);color:white;padding:14px;border:none;border-radius:12px;font-weight:800;margin-top:14px}
-.form-label{display:block;font-size:12px;font-weight:700;color:#0d3d26;margin:10px 0 4px}
-.form-input{width:100%;padding:11px 12px;border-radius:10px;border:1.5px solid #d9c9a0;background:#fffef8;font-size:13px}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.item{background:linear-gradient(145deg,#fff,#fdf6d8);border:1.5px solid #e6d5a0;border-radius:12px;padding:12px;text-align:center}
+.item b{display:block;font-size:12.5px;color:#0d3d26}
+.item small{font-size:10.5px;color:#666}
+.frais{background:linear-gradient(145deg,#0f2e1f,#143d2b);color:#f9e27a;border-radius:12px;padding:12px;font-size:11.5px;line-height:1.7;border:1px solid #2a5a3a;margin-top:14px}
+label{font-size:11px;font-weight:700;color:#0d3d26;margin-top:10px;display:block}
+input,select{width:100%;padding:11px 12px;border-radius:10px;border:1.5px solid #d9c9a0;background:#fffef8;font-size:13px;margin-top:4px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.btn{width:100%;background:linear-gradient(90deg,#0d3d26,#1a8a45);color:#fff;padding:14px;border:none;border-radius:12px;font-weight:800;margin-top:14px;font-size:14px}
 </style>
 </head>
 <body>
 <div class="hero">
-<div class="logo-wrap"><img src="logo.jpg" alt="Logo"></div>
+<div class="logo"><img src="logo.jpg" alt="Logo Markazu"></div>
 <div class="title">MARKAZU-AS-SUNNATI<br>LITAHFIZI-ALQUR'AN</div>
-<div class="motto"><div class="motto-line"></div><div class="motto-text">DISCIPLINE • RIGUEUR • PROGRÈS</div><div class="motto-line"></div></div>
-<div style="font-size:11px;color:#cbbd8a;margin-top:6px">Centre de Mémorisation du Saint Coran - Maradi Niger</div>
-<div class="gold-badge">MARADI NIGER</div>
+<div class="motto"><div class="line"></div><b>DISCIPLINE • RIGUEUR • PROGRÈS</b><div class="line"></div></div>
+<div style="font-size:11px;color:#cbbd8a;margin-top:4px">Centre de Mémorisation du Saint Coran - Maradi Niger</div>
+<div class="badge">MARADI NIGER</div>
 </div>
 <div class="container">
-<div class="white-card"><h2>📚 NOS PROGRAMMES</h2><div class="hr"></div><div class="program-grid">
-<div class="prog">✍️<br><b>Lire et Écrire</b><br><small>Arabe & Français</small></div>
-<div class="prog">📖<br><b>Coran Tajwid</b><br><small>Hifz + Ahkam</small></div>
-<div class="prog">🗣️<br><b>Langue Arabe</b><br><small>Comprendre Coran</small></div>
-<div class="prog">📜<br><b>Sirah</b><br><small>Vie Prophète ﷺ</small></div>
-<div class="prog">⚖️<br><b>Fiqhu</b><br><small>Jurisprudence</small></div>
-<div class="prog">☝️<br><b>Aqidah</b><br><small>Tawhid</small></div>
-<div class="prog">📚<br><b>Hadith</b><br><small>40 Nawawi</small></div>
-<div class="prog">🤲<br><b>Akhlak</b><br><small>Bons comportements</small></div>
-</div></div>
-<div class="white-card" id="inscription"><h2>📝 INSCRIPTION</h2><div class="hr"></div>
-<form onsubmit="event.preventDefault();let t='*INSCRIPTION*%0ANom:'+nom.value+'%0ASexe:'+sexe.value+'%0ATel:'+tel.value+'%0AVille:'+ville.value+'%0ANiveau:'+niveau.value;window.open('https://wa.me/22791224615?text='+t,'_blank')">
-<label class="form-label">Nom enfant *</label><input class="form-input" id="nom" required>
-<div class="form-row"><div><label class="form-label">Sexe *</label><select class="form-input" id="sexe" required><option value="">Choisir</option><option>Garçon</option><option>Fille</option></select></div><div><label class="form-label">Ville *</label><input class="form-input" id="ville" required placeholder="Maradi"></div></div>
-<label class="form-label">Tel parent *</label><input class="form-input" id="tel" required>
-<label class="form-label">Niveau *</label><select class="form-input" id="niveau" required><option value="">Choisir</option><option>Lire/Ecrire</option><option>Coran Tajwid</option><option>Arabe</option><option>Internat</option></select>
-<button class="btn-submit" type="submit">📲 ENVOYER WHATSAPP</button>
-</form></div>
+<div class="card">
+<h2>📚 NOS 8 PROGRAMMES</h2>
+<div class="hr"></div>
+<div class="grid">
+<div class="item">✍️<br><b>Lire et Écrire</b><br><small>Arabe & Français</small></div>
+<div class="item">📖<br><b>Coran Tajwid</b><br><small>Hifz + Ahkam</small></div>
+<div class="item">🗣️<br><b>Langue Arabe</b><br><small>Comprendre Coran</small></div>
+<div class="item">📜<br><b>Sirah</b><br><small>Vie Prophète ﷺ</small></div>
+<div class="item">⚖️<br><b>Fiqhu</b><br><small>Jurisprudence</small></div>
+<div class="item">☝️<br><b>Aqidah</b><br><small>Tawhid</small></div>
+<div class="item">📚<br><b>Hadith</b><br><small>40 Nawawi</small></div>
+<div class="item">🤲<br><b>Akhlak</b><br><small>Bons comportements</small></div>
 </div>
+<div class="frais">
+<b style="color:#fbe9a0">• Externat:</b> Sam-Dim 8h30-16h30<br>Inscription 2000F • Mensuels 6500F<br>
+<b style="color:#fbe9a0">• Internat:</b> 7-14 ans • À discuter<br>
+<span style="color:#a0d0a0">📞 91 22 46 15 / 99 64 16 33</span>
+</div>
+</div>
+<div class="card">
+<h2>📝 FICHE D'INSCRIPTION</h2>
+<div class="hr"></div>
+<form onsubmit="sendW(event)">
+<label>Nom complet enfant *</label><input id="nom" required placeholder="Ex: Abdoulaye Moussa">
+<div class="row"><div><label>Sexe *</label><select id="sexe" required><option value="">Choisir</option><option>Garçon</option><option>Fille</option></select></div><div><label>Ville *</label><input id="ville" required placeholder="Maradi"></div></div>
+<label>Téléphone parent *</label><input id="tel" required placeholder="+227 91 22 46 15">
+<label>Niveau *</label><select id="niv" required><option value="">Choisir</option><option>Débutant Lire/Ecrire</option><option>Coran + Tajwid</option><option>Arabe</option><option>Internat complet</option></select>
+<button class="btn" type="submit">📲 ENVOYER VIA WHATSAPP</button>
+</form>
+</div>
+</div>
+<script>
+function sendW(e){e.preventDefault();var t="*INSCRIPTION MARKAZU*%0ANom: "+nom.value+"%0ASexe: "+sexe.value+"%0AVille: "+ville.value+"%0ATel: "+tel.value+"%0ANiveau: "+niv.value;window.open("https://wa.me/22791224615?text="+t,"_blank")}
+</script>
 </body>
 </html>
