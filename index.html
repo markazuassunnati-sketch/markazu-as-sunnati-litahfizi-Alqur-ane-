@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription & Renseignements - Markazu As-sunnati</title>
+    <style>
+        /* Couleurs et Thème Principal */
+        :root {
+            --primary: #1b4d3e; /* Vert profond institutionnel */
+            --secondary: #c29b38; /* Or/Dore pour les détails */
+            --dark: #2b2d42;
+            --light: #f8f9fa;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* En-tête / Bannière */
+        header {
+            background: linear-gradient(rgba(27, 77, 62, 0.9), rgba(27, 77, 62, 0.95)), url('https://unsplash.com') no-repeat center/cover;
+            color: var(--white);
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 5px solid var(--secondary);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #e0e0e0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Conteneur Principal */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                grid-template-columns: 3fr 2fr;
+            }
+        }
+
+        /* Cartes et Sections */
+        .card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+            font-size: 1.6rem;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--secondary);
+        }
+
+        /* Grille des Programmes */
+        .program-list {
+            list-style: none;
+        }
+
+        .program-item {
+            padding: 15px 0;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .program-item:last-child {
+            border-bottom: none;
+        }
+
+        .program-title {
+            font-weight: bold;
+            color: var(--primary);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Formulaire */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .btn-submit {
+            background-color: var(--primary);
+            color: var(--white);
+            border: none;
+            padding: 14px 20px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+            border-bottom: 3px solid #113128;
+        }
+
+        .btn-submit:hover {
+            background-color: #143a2e;
+        }
+
+        /* Infos de Contact */
+        .contact-info p {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Pied de page */
+        footer {
+            background-color: var(--primary);
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            font-size: 0.9rem;
+            border-top: 4px solid var(--secondary);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <h1>Markazu As-sunnati</h1>
+        <p>Centre d'enseignement de la science légitime et de la langue arabe selon le Coran et la Sunnah</p>
+    </header>
+
+    <!-- Contenu Principal -->
+    <div class="container">
+        
+        <!-- Colonne de Gauche : Formulaire et Présentation -->
+        <main>
+            <!-- Présentation -->
+            <section class="card">
+                <h2>À propos de notre Centre</h2>
+                <p style="margin-bottom: 15px;">Le <strong>Markazu As-sunnati</strong> est une institution dédiée à la transmission du savoir islamique authentique. Nous offrons un cadre d'apprentissage rigoureux et adapté pour tous les niveaux.</p>
+                
+                <h3>Nos Programmes :</h3>
+                <ul class="program-list">
+                    <li class="program-item">
+                        <div class="program-title"><span>📚 Apprentissage du Saint Coran</span> <span>Tous niveaux</span></div>
+                        <p style="font-size: 0.9rem; color: #555;">Mémorisation (Hifdh), révision et règles de récitation (Tajweed).</p>
+                    </li>
+                    <li class="program-item">
+                        <div class="program-title"><span>🗣️ Langue Arabe & Sciences Islamiques</span> <span>Niveaux 1 à 3</span></div>
+                        <p style="font-size: 0.9rem; color: #555;">Grammaire, vocabulaire, expression orale, ainsi que les fondements de la croyance (Aqidah) et de la jurisprudence (Fiqh).</p>
+                    </li>
+                    <li class="program-item">
+                        <div class="program-title"><span>👦 Cours pour Enfants (Week-end)</span> <span>Dès 6 ans</span></div>
+                        <p style="font-size: 0.9rem; color: #555;">Éducation islamique de base, comportement (Adab) et initiation à la lecture de l'arabe.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Formulaire d'inscription -->
+            <section class="card">
+                <h2>Formulaire de Pré-inscription</h2>
+                <form id="registrationForm" onsubmit="handleSubmit(event)">
+                    
+                    <div class="form-group">
+                        <label for="fullName">Nom et Prénom complet *</label>
+                        <input type="text" id="fullName" required placeholder="Ex: Jean Dupont">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="birthDate">Date de naissance *</label>
+                        <input type="date" id="birthDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Numéro de téléphone (WhatsApp si possible) *</label>
+                        <input type="tel" id="phone" required placeholder="Ex: +227 00 00 00 00">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Adresse Email</label>
+                        <input type="email" id="email" placeholder="Ex: contact@exemple.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="program">Choisissez votre programme *</label>
+                        <select id="program" required>
+                            <option value="">-- Sélectionner un cursus --</option>
+                            <option value="coran">Apprentissage du Saint Coran & Tajweed</option>
+                            <option value="arabe">Langue Arabe & Sciences Islamiques</option>
+                            <option value="enfants">Cours enfants (Week-end)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Remarques ou questions particulières</label>
+                        <textarea id="message" rows="4" placeholder="Précisez votre niveau actuel ou vos attentes..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Soumettre ma candidature</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Colonne de Droite : Renseignements & Contact -->
+        <aside>
+            <div class="card contact-info">
+                <h2>Renseignements</h2>
+                <p><strong>📍 Adresse :</strong><br>Quartier Administratif, Madarounfa, Niger</p>
+                <p><strong>📞 Téléphone :</strong><br>+227 90 00 00 00</p>
+                <p><strong>📧 Email :</strong><br>contact@markazu-assunnati.com</p>
+                <p><strong>🕒 Horaires du secrétariat :</strong><br>Du Samedi au Jeudi<br>8h00 - 12h30 | 15h00 - 18h30</p>
+            </div>
+            
+            <div class="card">
+                <h2>Notre Emplacement</h2>
+                <p style="font-size: 0.9rem; color: #666; margin-bottom: 10px;">Retrouvez l'institut facilement grâce aux repères locaux de notre commune.</p>
+                <!-- Simulation d'un bloc de carte localisé -->
+                <div style="background-color: #e2e8f0; height: 200px; display: flex; align-items: center; justify-content: center; border-radius: 4px; font-weight: bold; color: #4a5568;">
+                    📍 Zone Madarounfa, Niger
+                </div>
+            </div>
+        </aside>
+
